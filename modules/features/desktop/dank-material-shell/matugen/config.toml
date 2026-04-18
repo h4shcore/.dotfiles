@@ -1,0 +1,90 @@
+[config]
+
+[templates.bat]
+input_path = "~/.config/matugen/templates/syntect/dankcolors.tmTheme"
+output_path = "~/.config/bat/themes/dankcolors.tmTheme"
+post_hook = "bat cache --build"
+
+[templates.emacs]
+input_path = "~/.config/matugen/templates/emacs/dankcolors-theme.el"
+output_path = "~/.cache/emacs/themes/dankcolors-theme.el"
+
+[templates.fish]
+input_path = "~/.config/matugen/templates/fish/dankcolors.fish"
+output_path = "~/.config/fish/conf.d/dankcolors.fish"
+
+[templates.ghostty]
+input_path = "~/.config/matugen/templates/ghostty/dankcolors"
+output_path = "~/.config/ghostty/themes/dankcolors"
+
+[templates.helix]
+input_path = "~/.config/matugen/templates/helix/dankcolors.toml"
+output_path = "~/.config/helix/themes/dankcolors.toml"
+
+[templates.kdeglobals]
+input_path = "~/.config/matugen/templates/kdeglobals/dankcolors"
+output_path = "~/.config/kdeglobals"
+
+[templates.obs-studio]
+input_path = "~/.config/matugen/templates/obs-studio/dankcolors.obt"
+output_path = "~/.config/obs-studio/themes/dankcolors.obt"
+
+[templates.papirus-folders]
+input_path = "~/.config/matugen/templates/matugen/placeholder"
+output_path = "~/.cache/matugen/placeholder"
+colors_to_compare = [
+  { name = "adwaita", color = "#8E99F3" },
+  { name = "blue", color = "#0071BC" },
+  { name = "breeze", color = "#29B6F6" },
+  { name = "carmine", color = "#D32F2F" },
+  { name = "darkcyan", color = "#00897B" },
+  { name = "green", color = "#43A047" },
+  { name = "indigo", color = "#3949AB" },
+  { name = "nordic", color = "#5C6BC0" },
+  { name = "palebrown", color = "#BCAAA4" },
+  { name = "pink", color = "#D81B60" },
+  { name = "teal", color = "#009688" },
+  { name = "white", color = "#E0E0E0" },
+  { name = "yellow", color = "#FBC02D" },
+  { name = "black", color = "#424242" },
+  { name = "bluegrey", color = "#546E7A" },
+  { name = "brown", color = "#8D6E63" },
+  { name = "cyan", color = "#00ACC1" },
+  { name = "deeporange", color = "#F4511E" },
+  { name = "grey", color = "#9E9E9E" },
+  { name = "magenta", color = "#8E24AA" },
+  { name = "orange", color = "#FB8C00" },
+  { name = "paleorange", color = "#FFCC80" },
+  { name = "red", color = "#E53935" },
+  { name = "violet", color = "#7E57C2" },
+]
+compare_to = "{{colors.primary.default.hex}}"
+post_hook = "papirus-folders -C {{closest_color}} --theme Papirus"
+
+[templates.tridactyl]
+input_path = "~/.config/matugen/templates/tridactyl/dankcolors.css"
+output_path = "~/.config/tridactyl/themes/dankcolors.css"
+
+[templates.vesktop]
+input_path = "~/.config/matugen/templates/vesktop/dankcolors.css"
+output_path = "~/.config/vesktop/themes/dankcolors.css"
+
+[templates.wlr-which-key]
+input_path = "~/.config/matugen/templates/wlr-which-key/config.yaml"
+output_path = "~/.config/wlr-which-key/config.yaml"
+
+[templates.yazi]
+input_path = "~/.config/matugen/templates/yazi/dankcolors.toml"
+output_path = "~/.config/yazi/theme.toml"
+
+[templates.youtube-music]
+input_path = "~/.config/matugen/templates/youtube-music/dankcolors.css"
+output_path = "~/.config/YouTube Music/themes/dankcolors.css"
+
+[templates.zellij]
+input_path = "~/.config/matugen/templates/zellij/dankcolors.kdl"
+output_path = "~/.config/zellij/themes/dankcolors.kdl"
+
+[templates.zeditor]
+input_path = "~/.config/matugen/templates/zeditor/dankcolors.json"
+output_path = "~/.config/zed/themes/dankcolors.json"

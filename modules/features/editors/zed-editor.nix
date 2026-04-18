@@ -1,0 +1,38 @@
+{
+  flake.modules.homeManager.options-editors =
+    { lib, config, ... }:
+    {
+      config = lib.mkIf config.editors.zed-editor.enable {
+        programs.zed-editor = {
+          enable = true;
+          userSettings = {
+            theme = {
+              mode = "system";
+              light = "Matugen Light";
+              dark = "Matugen Dark";
+            };
+            ui_font_size = 16;
+            buffer_font_size = 16;
+            buffer_font_family = "Maple Mono NF";
+            relative_line_numbers = "enabled";
+            title_bar = {
+              show_sign_in = false;
+              show_user_picture = false;
+            };
+            window_decorations = "server";
+            terminal = {
+              font_family = "Maple Mono NF";
+              shell.program = "fish";
+            };
+            telemetry = {
+              metrics = false;
+              diagnostics = false;
+            };
+            disable_ai = true;
+            helix_mode = true;
+            load_direnv = "shell_hook";
+          };
+        };
+      };
+    };
+}

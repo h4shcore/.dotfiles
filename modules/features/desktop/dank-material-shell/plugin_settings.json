@@ -1,0 +1,78 @@
+{
+  "displayMirror": {
+    "enabled": true,
+    "autoRefresh": true
+  },
+  "dockerManager": {
+    "enabled": true,
+    "dockerBinary": "podman",
+    "terminalApp": "ghostty",
+    "shellPath": "/home/@USERNAME@/.nix-profile/bin/fish"
+  },
+  "dankBitwarden": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": "@"
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "e100d420_afce_4f41_bb37_58887ccfc478"
+  },
+  "dankNotepadModule": {
+    "enabled": true
+  },
+  "easyEffects": {
+    "enabled": true,
+    "currentOutputIndex": -1,
+    "currentInputIndex": -1
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "=",
+    "noTrigger": false
+  },
+  "commandRunner": {
+    "enabled": true,
+    "terminal": "ghostty",
+    "history": [
+      "labwc --startup reaper"
+    ],
+    "trigger": "$",
+    "noTrigger": false
+  },
+  "emojiLauncher": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": ":"
+  },
+  "niriWindows": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": "!"
+  },
+  "webSearch": {
+    "enabled": true,
+    "searchEngines": [],
+    "defaultEngine": "duckduckgo",
+    "noTrigger": false,
+    "trigger": ">",
+    "disabledEngines": []
+  },
+  "dankHooks": {
+    "enabled": true
+  },
+  "screenRecorder": {
+    "enabled": true
+  },
+  "clipboardPlus": {
+    "enabled": true,
+    "tabOrder": "clipboard,search,category,pinned,todo",
+    "tabOrderEnabled": "clipboard,search,category,pinned,todo",
+    "backgroundOpacity": 80,
+    "showBarWidget": false,
+    "showPanelSeparator": true,
+    "hidePanelBackground": false,
+    "panelOpacityPinned": 20,
+    "listenClipboardWhileOpen": true
+  }
+}
