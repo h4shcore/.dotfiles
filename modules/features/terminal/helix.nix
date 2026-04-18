@@ -60,7 +60,7 @@
                 esc = [
                   "collapse_selection"
                   "keep_primary_selection"
-                  ":w"
+                  # ":w"
                 ];
                 g = {
                   q = ":bc";
