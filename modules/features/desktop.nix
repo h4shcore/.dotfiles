@@ -119,7 +119,7 @@
               "niri/config.kdl".source = ./desktop/niri/config.kdl;
               # "DankMaterialShell/settings.json".source = "${dank-material-shell}/settings.json";
               # "DankMaterialShell/plugin_settings.json".source =
-                # pkgs.replaceVars "${dank-material-shell}/plugin_settings.json" vars;
+              # pkgs.replaceVars "${dank-material-shell}/plugin_settings.json" vars;
               "matugen/templates".source = "${dank-material-shell}/matugen/templates";
               "matugen/config.toml".source = "${dank-material-shell}/matugen/config.toml";
               "qt5ct/qt5ct.conf".source = pkgs.replaceVars ./desktop/qt5ct/qt5ct.conf vars;
