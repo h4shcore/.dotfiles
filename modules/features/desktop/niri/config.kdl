@@ -95,7 +95,7 @@ binds {
     Mod+F repeat=false hotkey-overlay-title="Expand Column"                            { expand-column-to-available-width;         }
     Mod+O repeat=false hotkey-overlay-title="Toggle Overview"                          { toggle-overview;                          }
     Mod+Q repeat=false hotkey-overlay-title="Quit Current Window"                      { close-window;                             }
-    Mod+R repeat=false hotkey-overlay-title="Switch Preset Column Width"               { switch-preset-column-width;               }
+    Mod+W repeat=false hotkey-overlay-title="Switch Preset Column Width"               { switch-preset-column-width;               }
     Mod+Minus repeat=false hotkey-overlay-title="Decrease Column Width"                { set-column-width "-10%";                  }
     Mod+Equal repeat=false hotkey-overlay-title="Increase Column Width"                { set-column-width "+10%";                  }
     Mod+BracketLeft repeat=false hotkey-overlay-title="Consume or Expel Window Left"   { consume-or-expel-window-left;             }
@@ -133,7 +133,7 @@ binds {
     Mod+Ctrl+M repeat=false hotkey-overlay-title="Set Dynamic Cast to Focused Monitor" { set-dynamic-cast-monitor;  };
     Mod+Ctrl+C repeat=false hotkey-overlay-title="Clear Dynamic Cast"                  { clear-dynamic-cast-target; };
 
-    Mod+T repeat=false hotkey-overlay-title="Open Terminal" { spawn "ghostty" "--gtk-single-instance=true"; }
+    Mod+Return repeat=false hotkey-overlay-title="Open Terminal" { spawn "ghostty" "--gtk-single-instance=true"; }
     Mod+E repeat=false hotkey-overlay-title="Open Explorer" { spawn "wlr-which-key" "--initial-keys" "e";   }
     Mod+B repeat=false hotkey-overlay-title="Open Browser"  { spawn "wlr-which-key" "--initial-keys" "b";   }
 
