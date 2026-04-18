@@ -38,7 +38,7 @@ input {
     }
 }
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png"
 
 layout {
     gaps 16
@@ -101,8 +101,8 @@ binds {
     Mod+BracketLeft repeat=false hotkey-overlay-title="Consume or Expel Window Left"   { consume-or-expel-window-left;             }
     Mod+BracketRight repeat=false hotkey-overlay-title="Consume or Expel Window Right" { consume-or-expel-window-right;            }
     Mod+Shift+F repeat=false hotkey-overlay-title="Fullscreen Window"                  { fullscreen-window;                        }
-    Mod+Ctrl+F repeat=false hotkey-overlay-title="Toggle Window Floating"              { toggle-window-floating;                   }
-    Mod+Alt+F repeat=false hotkey-overlay-title="Toggle Window Floating"               { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+Space repeat=false hotkey-overlay-title="Toggle Window Floating"         { toggle-window-floating;                   }
+    Mod+Space repeat=false hotkey-overlay-title="Toggle Window Floating"               { switch-focus-between-floating-and-tiling; }
     Mod+Ctrl+Shift+F repeat=false hotkey-overlay-title="Toggle Windowed Fullscreen"    { toggle-windowed-fullscreen;               }
     Mod+Shift+R repeat=false hotkey-overlay-title="Switch Preset Window Height"        { switch-preset-window-height;              }
     Mod+Ctrl+R repeat=false hotkey-overlay-title="Reset Window Height"                 { reset-window-height;                      }
@@ -146,7 +146,7 @@ binds {
     Mod+V repeat=false hotkey-overlay-title="Toggle Clipboard Manager"                             { spawn "dms" "ipc" "call" "clipboardPlus" "togglePanel"; }
     Mod+X repeat=false hotkey-overlay-title="Toggle Power Menu"                                    { spawn "dms" "ipc" "powermenu" "toggle";                 }
     Mod+S repeat=false hotkey-overlay-title="Toggle Settings"                                      { spawn "dms" "ipc" "settings" "toggle";                  }
-    Mod+Space repeat=false hotkey-overlay-title="Toggle Application Launcher"                      { spawn "dms" "ipc" "spotlight" "toggle";                 }
+    Mod+R repeat=false hotkey-overlay-title="Toggle Application Launcher"                          { spawn "dms" "ipc" "spotlight" "toggle";                 }
     Mod+Ctrl+L repeat=false hotkey-overlay-title="Toggle Lock Screen"                              { spawn "dms" "ipc" "lock" "lock";                        }
     Mod+Shift+M allow-when-locked=true repeat=false hotkey-overlay-title="Toggle Light/Dark Theme" { spawn "dms" "ipc" "call" "theme" "toggle";              }
     Mod+Shift+N allow-when-locked=true repeat=false hotkey-overlay-title="Toggle Night Mode"       { spawn "dms" "ipc" "night" "toggle";                     }
