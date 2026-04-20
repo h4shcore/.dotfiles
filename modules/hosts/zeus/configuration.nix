@@ -154,6 +154,26 @@ in
       # this value at the release version of the first install of this system.
       # Before changing this value read the documentation for this option
       # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+
+      # enable graphics
+      graphics = {
+        enable = true;
+        nvidia = {
+          enable = true;
+          prime = {
+            enable = true;
+            settings = {
+              intelBusId = "PCI:0:2:0";
+              nvidiaBusId = "PCI:1:0:0";
+              offload = {
+                enable = true;
+                enableOffloadCmd = true;
+              };
+            };
+          };
+        };
+      };
+
       system.stateVersion = "25.11"; # Did you read the comment?
 
     };
