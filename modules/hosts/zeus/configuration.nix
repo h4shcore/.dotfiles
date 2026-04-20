@@ -10,6 +10,7 @@ in
       self.modules.nixos.options-media
       self.modules.nixos.options-containers'
       self.modules.nixos.options-gaming
+      self.modules.nixos.options-graphics
       self.modules.nixos.options-virtualisation'
       self.modules.nixos.options-desktop
       self.modules.nixos."hosts-${name}"
