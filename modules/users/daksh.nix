@@ -87,11 +87,11 @@ in
     #   appimage.enable = true;
     # };
 
-    # gaming = {
-    #   steam.enable = true;
-    #   gamescope.enable = true;
-    #   gamemode.enable = true;
-    # };
+    gaming = {
+      steam.enable = true;
+      gamescope.enable = true;
+      gamemode.enable = true;
+    };
 
     # programs.gpu-screen-recorder.enable = true;
   };
