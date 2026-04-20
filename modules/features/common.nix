@@ -19,7 +19,8 @@
             desktop.enable = lib.mkEnableOption "desktop specific common settings";
             flake = lib.mkOption {
               type = lib.types.str;
-              default = "/etc/nixos";
+              # default = "/etc/nixos";
+              default = "/home/daksh/.dotfiles";
               description = "path to the flake to use";
             };
             gc.arguments = lib.mkOption {
