@@ -143,6 +143,7 @@ in
             qbittorrent
             trash-cli
             wl-mirror
+            playerctl
             ;
           inherit (pkgs.kdePackages) dolphin gwenview okular;
         };
