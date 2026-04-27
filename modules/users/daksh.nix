@@ -60,6 +60,10 @@ in
     };
     hardware.bluetooth.settings.Policy.AutoEnable = false;
 
+    music = {
+      spotify.enable = true;
+    };
+
     containers'.enable = true;
 
     virtualisation = {
