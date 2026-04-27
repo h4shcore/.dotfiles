@@ -31,17 +31,15 @@
         in
         lib.mkMerge [
           (lib.mkIf config.music.spotify.enable {
-            {
-              programs.spicetify = {
-                enable = true;
-                enabledExtensions = with spicePkgs.extensions; [
-                  adblockify
-                  hidePodcasts
-                  shuffle
-                ];
-              };
-            }
+            programs.spicetify = {
+              enable = true;
+              enabledExtensions = with spicePkgs.extensions; [
+                adblockify
+                hidePodcasts
+                shuffle
+              ];
+            };
           })
-      ];
+        ];
     };
 }
