@@ -27,6 +27,7 @@ in
         "networkmanager"
         "wheel"
         "wireshark"
+        "uinput"
       ];
     };
 
@@ -91,6 +92,10 @@ in
       steam.enable = true;
       gamescope.enable = true;
       gamemode.enable = true;
+    };
+
+    input = {
+      kanata.enable = true;
     };
 
     # programs.gpu-screen-recorder.enable = true;
