@@ -27,6 +27,7 @@ in
         "networkmanager"
         "wheel"
         "wireshark"
+        "input"
         "uinput"
       ];
     };
