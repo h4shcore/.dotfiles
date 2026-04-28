@@ -1,0 +1,50 @@
+;; Keys to intercept and remap.
+;; RULES:
+;;   - Every deflayer must have the same number of entries as defsrc.
+;;   - Entries in each deflayer must be in the same positional order as defsrc.
+;;   - Use `_` in a deflayer for transparent (fall through to lower layer / default).
+;;   - Use `XX` for a blocked/no-op key.
+(defsrc
+  caps a s d f g h j k l ;
+)
+
+;; Timing for tap-hold behavior: tap within 200ms, hold after 200ms
+(defvar
+  tap-time 200
+  hold-time 200
+)
+
+;; Home row mods (left hand only, right hand commented out)
+;; Each key acts normally on tap, becomes a modifier on hold
+(defalias
+  ;; tap = Esc hold=Ctrl
+  caps (tap-hold $tap-time $hold-time esc lctl)
+
+  ;; nav layer
+  g    (tap-hold $tap-time $hold-time   g (layer-while-held nav))
+
+  ;; a    (tap-hold-press $tap-time $hold-time   a lctrl)  ;; hold=Ctrl
+  ;; s    (tap-hold-press $tap-time $hold-time   s lmet)   ;; hold=Super
+  ;; d    (tap-hold-press $tap-time $hold-time   d lalt)   ;; hold=Alt
+  ;; f    (tap-hold-press $tap-time $hold-time   f lsft)   ;; hold=Shift
+  ;; j    (tap-hold $tap-time $hold-time   j lsft)
+  ;; k    (tap-hold $tap-time $hold-time   k lalt)
+  ;; l    (tap-hold $tap-time $hold-time   l lmet)
+  ;; ;    (tap-hold $tap-time $hold-time   ; lctrl)
+)
+
+;; Default layer: caps tap-hold, g activates nav on hold, rest passthrough
+(deflayer base
+  @caps a s d f @g h j k l ;
+)
+
+;; Navigation layer (activated by holding g): vim-style arrow keys on hjkl
+(deflayer nav
+;;  a s d f g h    j    k  l     ;
+  _ _ _ _ _ _ left down up right _
+)
+
+;; Map the Copilot key (lsft+lmet+f23 chord) to Ctrl
+(defchordsv2
+  (lsft lmet f23) lctl 200 all-released ()
+)
