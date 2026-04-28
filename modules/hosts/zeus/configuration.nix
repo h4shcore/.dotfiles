@@ -13,6 +13,7 @@ in
       self.modules.nixos.options-graphics
       self.modules.nixos.options-virtualisation'
       self.modules.nixos.options-desktop
+      self.modules.nixos.options-input
       self.modules.nixos."hosts-${name}"
       self.modules.nixos.users-daksh
     ];
@@ -113,9 +114,6 @@ in
           "wheel"
         ];
       };
-
-      # Install firefox.
-      programs.firefox.enable = true;
 
       # Allow unfree packages
       nixpkgs.config.allowUnfree = true;
