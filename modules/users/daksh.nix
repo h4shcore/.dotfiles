@@ -60,10 +60,6 @@ in
     };
     hardware.bluetooth.settings.Policy.AutoEnable = false;
 
-    music = {
-      spotify.enable = true;
-    };
-
     containers'.enable = true;
 
     virtualisation = {
@@ -111,6 +107,7 @@ in
         self.modules.homeManager.options-browsers
         self.modules.homeManager.options-editors
         self.modules.homeManager.options-media
+        self.modules.homeManager.options-music
         self.modules.homeManager."users-${username}"
         {
           home.stateVersion = "25.11";
@@ -172,6 +169,10 @@ in
       };
 
       # media.daw.enable = true;
+
+      music = {
+        spotify.enable = true;
+      };
 
       # packaging.flatpak.enableEssentials = true;
 
