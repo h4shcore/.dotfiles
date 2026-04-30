@@ -172,6 +172,8 @@
               setCursor = "%";
               expansion = "fd % /nix/store | fzf";
             };
+
+            # hash conversion for pkgs
             npu = {
               setCursor = "%";
               expansion = "nix-prefetch-url % | tr -d  '\n' | wl-copy";
@@ -180,6 +182,7 @@
               setCursor = "%";
               expansion = "nix hash convert --to sri --hash-algo sha256 % | tr -d '\n' | wl-copy";
             };
+
             "=" = {
               regex = ''=[^\s]+'';
               position = "anywhere";
