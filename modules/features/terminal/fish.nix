@@ -172,6 +172,14 @@
               setCursor = "%";
               expansion = "fd % /nix/store | fzf";
             };
+            npu = {
+              setCursor = "%";
+              expansion = "nix-prefetch-url % | tr -d  '\n' | wl-copy";
+            };
+            nhc = {
+              setCursor = "%";
+              expansion = "nix hash convert --to sri --hash-algo sha256 % | tr -d '\n' | wl-copy";
+            };
             "=" = {
               regex = ''=[^\s]+'';
               position = "anywhere";
