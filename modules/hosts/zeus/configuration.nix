@@ -28,6 +28,9 @@ in
         ./_generated/hardware-configuration.nix
       ];
 
+      # enable zram
+      zramSwap.enable = true;
+
       # enable experimental features
       nix.settings.experimental-features = [
         "nix-command"

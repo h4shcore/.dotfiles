@@ -11,7 +11,7 @@
         networking'.enable = lib.mkEnableOption "enable networking";
         networking'.name = lib.mkOption {
           type = lib.types.str;
-          default = "nixos";
+          default = "zeus";
           description = "the networking hostName";
         };
         networking'.allowPortRanges = lib.mkOption {

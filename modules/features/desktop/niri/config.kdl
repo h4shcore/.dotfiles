@@ -40,7 +40,7 @@ input {
 screenshot-path "~/Pictures/Screenshots/ss_%Y-%m-%d_%H-%M-%S.png"
 
 layout {
-    gaps 16
+    gaps 10
     struts {
         left 0
         right 0
@@ -60,7 +60,7 @@ layout {
         width 8
         gap 8
         gaps-between-tabs 4
-        corner-radius 8
+        corner-radius 5
     }
 }
 
@@ -164,17 +164,6 @@ binds {
 }
 
 window-rule {
-    opacity 0.85
-
-    background-effect {
-        blur true
-        xray true
-    }
-}
-
-layer-rule {
-    match namespace="^dms-clipboardPlus-panel"
-
     opacity 0.85
 
     background-effect {
